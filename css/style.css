@@ -1,0 +1,304 @@
+/* For debugging purposes only */
+/* * {
+    border: 1px solid;
+} */
+
+body {
+    font-family: 'Poppins', Helvetica;
+    background-color: rgb(148, 219, 255);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: rgb(255, 255, 255);
+    border: 1px solid;
+    color:(black);
+    border-radius: 25px;
+}
+
+.main-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://i.pinimg.com/736x/e8/18/c0/e818c093b8e1f13d4de147aeea09cf76.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+
+/* Nav Style */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 5px;
+}
+
+nav a {
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    background-color: azure;
+    border-radius: 50px;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+section {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+#home h4 {
+    font-size: 15px;
+    font-weight: 500; 
+    font-style: italic; 
+    color: rgb(70, 70, 70);
+
+}
+
+#introduction-about-yulje h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+#introduction-about-yulje h4 {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+#our-Specialist h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+#contact-us h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px; 
+}
+
+.paragraph img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+    border: 1px solid;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: -4px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.card {
+    background-color: rgb(226, 239, 250);
+    border-radius: 7px;
+    width: 180px;
+    text-align: center;
+    align-items: center;
+}
+
+.card img {
+    color: black;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin: 7px;
+}
+
+.card h3 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 8px;
+}
+
+.name {
+    font-weight: lighter;
+}
+
+.specialist {
+    font-weight: bold;
+}
+
+.banner-img {
+    background-size: cover;
+    background-position: center;
+    border: 1px solid;
+    height: 370px;
+    width: 50%;
+    justify-self: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#form-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    min-width: auto; 
+    gap: 0.3rem;
+}
+
+#form-contact input,
+#form-contact textarea,
+#form-contact select {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#form-contact button {
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(8, 59, 168);
+    color: aliceblue;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.4 ease;
+}
+
+#form-contact button:hover {
+    background-color: rgb(0, 170, 218);
+}
+
+#form-contact label {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-left: 2px;
+}
+
+.sub-content {
+    height: 50px;
+    align-content: center;
+}
+
+.error-msg {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 17px;
+    margin: 2px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .banner-form {
+        flex-direction: column;
+    }
+    
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 1px;
+        height: 80px;
+        margin-left: 5px;
+    }
+
+    .main-logo {
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+        align-items: flex-start;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    .card-container {
+        display: grid;
+        gap: 15px;
+    }
+
+    #form-contact input,
+    #form-contact textarea,
+    #form-contact select,
+    #form-contact button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+}

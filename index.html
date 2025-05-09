@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yulje Hospital</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css\style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="main-logo"></div>
+
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <!-- Navigation -->
+        <nav id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#our-Specialist">Our Specialist</a>
+            <a href="#contact-us">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Content -->
+        <section id="home">
+            <header>
+                <h1>Welcome to Yulje Medical Center Hospital Page</h1>
+            </header>
+
+            <h4>Your Health is Our Priority</h4>
+
+            <!-- Banner Content -->
+            <div id="banner-content" class="banner-img"></div>
+        </section>
+        
+
+        <hr />
+
+        <section id="introduction-about-yulje">
+            <header>
+                <h1>Introduction About Yulje</h1>
+                <h4>Yulje Medical Center is one of the big hospital businesses from professor Ahn Jeong-Won's family based in seoul. Yulje Medical Center is a hospital committed to delivering high-quality medical services, advanced clinical research, and comprehensive medical education. Yulje is equipped with state-of-the-art facilities and a multidisciplinary team of experts, ensuring patient-centered care across a wide range of specialties.</h4> 
+                <h4>Until now, Yulje Medical Center has several branches namely Jeongno, Sokcho, Sejong, and Songdo. The center offers a comprehensive range of specialized services, including cardiology, neurology, oncology, surgery, and obstetrics, ensuring holistic and integrated treatment for patients. This hospital emphasizes innovation in healthcare delivery, ethical medical practices, and continuous professional development. With a reputation for clinical excellence and a strong academic foundation, Yulje Medical Center serves as a benchmark for modern medical institutions in South Korea</h4>
+            </header>
+            <div class="paragraph">
+                <img src="https://pbs.twimg.com/media/GoVu9tmWwAA7ekn?format=jpg" alt="Yulje Medical Center">
+            </div>
+        </section>
+
+
+        <hr>
+
+        <!-- Our Specialist Content -->
+        <section id="our-Specialist">
+            <header>
+                <h1>Our Specialist</h1>
+            </header>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/ea/af/75/eaaf7503450d8bf2487a3415c0fccfd6.jpg" alt="Lee Ik-Jun">
+                    <h3>
+                        <span class="name">Lee Ik-Jun,</span> <br>
+                        <span class="specialist">General Surgery</span>
+                    </h3>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/af/73/1a/af731a55c990ec0c6b94ace45c35bf19.jpg" alt="Ahn Jeong-Won">
+                    <h3>
+                        <span class="name">Ahn Jeong-Won,</span> <br>
+                        <span class="specialist">Pediatric Surgery</span>
+                    </h3> 
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/8c/b5/6d/8cb56dec1ac15549e966e82251f40fbe.jpg" alt="Chae Song-Hwa">
+                    <h3>
+                        <span class="name">Chae Song-Hwa,</span><br> 
+                        <span class="specialist">Neurosurgery</span>
+                    </h3>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/58/07/bc/5807bc4c13341d19e8ed97178e1001e9.jpg" alt="Kim Jun-Wan">
+                    <h3>
+                        <span class="name">Kim Jun-Wan,</span> <br> 
+                        <span class="specialist">Thoracoplastic Surgery</span> 
+                    </h3>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/28/bf/e1/28bfe1177c862557b8a191ea21a5fa44.jpg" alt="Yang Seok-Hyeong">
+                    <h3>
+                        <span class="name">Yang Seok-Hyeong,</span> <br> 
+                        <span class="specialist">OBGYN</span>
+                    </h3>
+                </div>
+            </div>
+
+        </section>
+
+        <hr />
+
+        <!-- Contact Us Content -->
+        <section id="contact-us">
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+
+            <!-- Contact Us Content -->
+            <div class="sub-content">
+                <p>Admin will contact you later than 1x24 hours after we receive the data.</p>
+            </div>
+
+            <!--Form Content-->
+            <form id="form-contact">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Insert Your Name">
+                <p class="error-msg" id="nameError"></p>
+
+                <label for="email">Your Email</label>
+                <input type="text" id="email" placeholder="example@email.com">
+                <p class="error-msg" id="emailError"></p>
+                
+                <label for="interest">What Are You Looking For?</label>
+                <select id="interest">
+                    <option value="">Select This</option>
+                    <option value="consultation">Online Consultation</option>
+                    <option value="booking">Booking Appointment</option>
+                    <option value="schedule">Doctor's Practice Schedule</option>
+                </select>
+                <p class="error-msg" id="interestError"></p>
+
+                <label for="description">Description</label>
+                <textarea name="description" id="description"></textarea>
+                <p class="error-msg" id="descriptionError"></p>
+
+                <button type="submit">SEND</button>
+            </form>
+        </section>
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+        <span>
+            &copy; 2025 Fitri Novianti Hidayah. All rights reserved.
+        </span>
+    </footer>
+
+<script src="js\script.js"></script>
+
+</body>
+
+</html>
